@@ -41,7 +41,7 @@ KEYGEN_BINARY = $(OUTPUT_DIR)navicat-keygen
 
 patcher: $(PATCHER_HEADER) $(PATCHER_SOURCE)
 	@if [ ! -d $(OUTPUT_DIR) ]; then mkdir -p $(OUTPUT_DIR); fi
-	$(CC) -std=c++17 -O2 -I$(OPENSSL_INCLUDE_PATH) -L$(OPENSSL_LIB_PATH) -lcrypto -lcapstone -lkeystone $(PATCHER_SOURCE) -o $(PATCHER_BINARY)
+	$(CC) -std=c++1z -O2 -I$(OPENSSL_INCLUDE_PATH) -L$(OPENSSL_LIB_PATH) -lcrypto -lcapstone -lkeystone $(PATCHER_SOURCE) -o $(PATCHER_BINARY)
 
 keygen: $(KEYGEM_HEADER) $(KEYGEN_SOURCE)
 	@if [ ! -d $(OUTPUT_DIR) ]; then mkdir -p $(OUTPUT_DIR); fi

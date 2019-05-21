@@ -1,5 +1,6 @@
 #include "PatchSolutions.hpp"
 #include "CapstoneDisassembler.hpp"
+#include <cassert>
 
 const char PatchSolution2::Keyword[1114] =
     "BIjWyoeRR0NBgkqnDZWxCgKCEAw1dqF3DTvOB91ZHwecJYFrdM1KEh"
